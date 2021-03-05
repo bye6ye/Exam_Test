@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center|top"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:text="Вход на экзамен"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn_black20"
+                android:ems="10"
+                android:hint="@string/FIO"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/Subject"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn_black20"
+                android:ems="10"
+                android:hint="@string/group"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/CodeExam"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn_black20"
+                android:ems="10"
+                android:hint="@string/CodeExam"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/buttonCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_btn_black95"
+                android:onClick="onClickReturn"
+                android:text="@string/comeIn"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_btn_black95"
+            android:onClick="onClickReturn"
+            android:text="@string/back"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints" />
+
+    </FrameLayout>
+
+</RelativeLayout>
